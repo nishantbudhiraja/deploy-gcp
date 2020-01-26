@@ -15,7 +15,7 @@ def main():
     st.subheader('created by Nishant Budhiraja')
     st.subheader('')
 
-    df = pd.read_csv("C:\MLapp\data")
+    df = pd.read_csv("data")
     if st.checkbox('Show dataframe'):
         st.write(df)
 
