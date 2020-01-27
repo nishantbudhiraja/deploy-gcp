@@ -18,7 +18,7 @@ def main():
     @st.cache
     def load_data():
     df = pd.read_csv("data")
-    df = load_data
+    df = load_data()
     if st.checkbox('Show dataframe'):
         st.write(df)
 
