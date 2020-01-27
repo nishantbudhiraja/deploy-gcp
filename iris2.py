@@ -14,8 +14,11 @@ def main():
     st.title('Welcome To My Machine Learning And Visualization App :')
     st.subheader('created by Nishant Budhiraja')
     st.subheader('')
-
+    
+    @st.cache
+    def load_data():
     df = pd.read_csv("data")
+    df = load_data
     if st.checkbox('Show dataframe'):
         st.write(df)
 
